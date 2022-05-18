@@ -2,7 +2,6 @@ microbundle-ts-pkg: A TypeScript npm package skeleton/starter project with micro
 
 Comes with:
 
-- [SAMPLE_README.md](./SAMPLE_README.md) and [USE_CASES.md](./USE_CASES.md) for documentation.
 - [built-in `node:test` runner](https://nodejs.org/dist/latest-v18.x/docs/api/test.html) for testing (see [./tests](./tests))
 - prettier for formatting
 - microbundle for compiling TypeScript to UMD, ESM, CJS
