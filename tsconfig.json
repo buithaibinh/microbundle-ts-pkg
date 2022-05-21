@@ -5,7 +5,7 @@
     "lib": ["ES2020"],
     "declaration": true,
     "strict": true,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "strictNullChecks": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
@@ -17,9 +17,13 @@
     "inlineSources": true,
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
-    "resolveJsonModule": true,
+    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "typeRoots": ["./node_modules/@types"]
+    "baseUrl": "./",
+    "paths": {
+      "*": ["src/@custom_types/*"]
+    },
+    "typeRoots": ["./node_modules/@types", "src/@custom_types"]
   },
   "exclude": ["node_modules"]
 }

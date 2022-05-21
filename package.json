@@ -1,12 +1,12 @@
 {
-  "name": "microbundle-ts-pkg",
+  "name": "curlconverter-js",
   "description": "A TypeScript npm package skeleton/starter project with microbundle, node:test and prettier",
   "version": "0.0.1",
-  "source": "src/main.ts",
-  "main": "dist/main.umd.js",
-  "module": "dist/main.modern.module.js",
-  "unpkg": "dist/main.umd.js",
-  "types": "dist/main.d.ts",
+  "source": "src/index.ts",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.modern.module.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
   "keywords": [
     "microbundle",
     "typescript"
@@ -26,6 +26,7 @@
     "publish": "npm publish"
   },
   "devDependencies": {
+    "@types/nunjucks": "^3.2.1",
     "microbundle": "^0.15.0",
     "prettier": "^2.6.2",
     "xlsx": "^0.18.5"
@@ -51,7 +52,11 @@
   },
   "homepage": "https://github.com/buithaibinh/microbundle-ts-pkg#readme",
   "dependencies": {
-
+    "@curlconverter/tree-sitter-bash": "^0.0.2",
+    "nunjucks": "^3.2.3",
+    "query-string": "^7.1.1",
+    "tree-sitter": "^0.20.0",
+    "tree-sitter-bash": "^0.19.0"
   },
   "optionalDependencies": {
     "fsevents": "*"
